@@ -14,7 +14,7 @@ class Symbol
   # :betterCallSaul.to_s_snake_case => 'better_call_saul'
   #
   def to_s_snake_case
-    regExp = /(?=[A-Z])/
-    to_s.split(regExp).join('_').downcase
+    regexp = /(?=[A-Z])/
+    to_s.split(regexp).join('_').downcase
   end
 end
