@@ -6,8 +6,8 @@ class String
   # 'better_call_saul'.camel_case #=> 'BetterCallSaul'
   # 'breaking bad'.camel_case(' ') #=> 'BreakingBad'
   #
-  def camel_case(aSeparator = '_')
-    split(aSeparator).map!(&:capitalize).join
+  def camel_case(separator = '_')
+    split(separator).map!(&:capitalize).join
   end
 
   #

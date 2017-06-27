@@ -6,8 +6,8 @@ class Symbol
   # :better_call_saul.to_s_camel_case => 'BetterCallSaul'
   # :'breaking bad'.to_s_camel_case(' ') => 'BreakingBad'
   #
-  def to_s_camel_case(aSeparator = '_')
-    to_s.downcase.split(aSeparator).map(&:capitalize).join
+  def to_s_camel_case(separator = '_')
+    to_s.downcase.split(separator).map(&:capitalize).join
   end
 
   #
